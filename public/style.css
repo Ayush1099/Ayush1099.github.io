@@ -1,0 +1,69 @@
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 8px;
+    color: black;
+  }
+  
+  .inv{
+     cursor:pointer;
+     color:blue;
+     text-decoration:underline;
+  }
+  
+  h2:before {
+    content: ' \22EE';
+  }
+
+  tr:nth-child(even){
+      background-color: #f2f2f2
+    }
+ 
+  .sidepanel  {
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color:whitesmoke;
+    opacity: 0.8;
+    overflow-x: auto;
+    transition: 0.5s;
+    padding-top: 60px;
+    height:600px;
+    border:1px solid #ccc;
+    font:16px/26px Georgia, Garamond, Serif;
+    overflow:auto;
+  }
+  
+  .sidepanel a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidepanel a:hover {
+    color: red;
+    text-decoration: black;
+  }
+
+  .sidepanel .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+  }
+  .contain#blur.active{
+    filter:blur(5px);
+    pointer-events:none;
+    user-select:none;
+  }
